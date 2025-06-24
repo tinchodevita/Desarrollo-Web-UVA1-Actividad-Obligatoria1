@@ -3,12 +3,17 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
+  background-color: #f1f3f5;
   color: #333;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
@@ -16,8 +21,9 @@ main {
 }
 
 h2 {
-  color: #0056b3;
-  margin-top: 20px;
+  color: #0d6efd;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 img.rounded-circle {
@@ -39,6 +45,16 @@ a:hover {
   text-decoration: underline;
 }
 
+ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
 footer {
   background-color: #343a40;
   color: white;
@@ -57,4 +73,71 @@ footer {
   border-color: #0d6efd;
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
   outline: none;
+}
+
+.card-box {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+h5 {
+  color: #0d6efd;
+}
+
+.card-box a {
+  color: #0d6efd;
+}
+
+.card-box a:hover {
+  text-decoration: underline;
+}
+
+img.rounded-circle {
+  border: 3px solid #0d6efd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.foto-cuadrada {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 3px solid #0d6efd;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* TEMA OSCURO */
+body.dark-mode {
+  background-color: #121212;
+  color: #e1e1e1;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .card-box,
+body.dark-mode table {
+  background-color: #1e1e1e;
+  color: #e1e1e1;
+  border-color: #2a2a2a;
+}
+
+body.dark-mode a {
+  color: #4dabf7;
+}
+
+body.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #e1e1e1;
+}
+
+body.dark-mode .form-control {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border-color: #444;
 }
