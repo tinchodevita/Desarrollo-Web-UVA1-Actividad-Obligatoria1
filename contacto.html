@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inicio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Mi Cursada 2025</a>
@@ -30,20 +31,30 @@
 
   <main>
     <div class="container mt-5">
-      <h2 class="text-center">📢 Avisos y Tareas</h2>
-      <p class="text-center text-muted mb-4">Revisá los anuncios importantes y las tareas asignadas.</p>
-
-      <div class="card-box">
-        <ul>
-          <li>🗓️ Entrega de UVA 1 - 3 de mayo</li>
-          <li>📎 Subida obligatoria al campus antes del parcial</li>
-          <li>🧪 Consulta de dudas: miércoles a las 18 hs</li>
-          <li>🛠️ Corregir actividad de objetos - Paradigma</li>
-          <li>📥 Recordar actualizar GitHub antes del 10/06</li>
-          <li>📚 Leer capítulo 5 del libro de POO</li>
-          <li>✏️ Confirmar asistencia a clase del viernes</li>
-        </ul>
-      </div>
+      <h2>Contacto</h2>
+      <form id="formulario-contacto" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control form-input" id="nombre" required>
+          <div class="invalid-feedback">Debe ingresar el nombre.</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control form-input" id="email" required>
+          <div class="invalid-feedback">Debe ingresar un correo electrónico válido.</div>
+        </div>
+        <div class="mb-3">
+          <label for="asunto" class="form-label">Asunto</label>
+          <input type="text" class="form-control form-input" id="asunto" required>
+          <div class="invalid-feedback">Debe ingresar un asunto.</div>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control form-input" id="mensaje" rows="4" required></textarea>
+          <div class="invalid-feedback">Debe ingresar un mensaje.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     </div>
   </main>
 
@@ -55,7 +66,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../funciones.js"></script>
+  <script src="/funciones.js"></script>
 
 </body>
 
